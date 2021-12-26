@@ -1,0 +1,127 @@
+ID và Class
+-ID là định danh duy nhất, sử dụng duy nhất 1 lần.
+-Class là sử dụng cho nhiều phần tử khác nhau.
+ID là # 
+Class là .
+Priority?
+1. Internal, External?
+2. Inline - 1000.
+3. #id - 100.
+4. .class - 10.
+5 tag - 1.
+6. Equal specificity? Sự giống nhau.
+7. Universal selector and inherited. Độ chọn phổ cập và kế thừa.
+8. !important: đặc biệt ưu tiên và được thêm sau các giá trị của thuộc tính.
+
+ĐẶT BIẾN TRONG CSS
+:root{
+--text-color:red;}
+h1{
+color:var(--text-color);}
+được sử dụng mọi nơi thẻ có thuộc toán --text-color.
+
+ĐƠN VỊ TRONG CSS.(CSS Units)
+1. Absolute units?
+	-px;
+	-pt;
+	-cm;
+	....
+2. Relative units?
+	- %; phụ thuộc vào thẻ chứa nó.
+	- rem; Phụ thuộc vào thẻ được định nghĩa.
+	- em; phụ thuộc vào thẻ gần nhất chứa nó.
+	- vw: viewport width;
+	- vh: viewport height;
+CSS Padding
+	Đệm thêm vào thây đổi kích thước làm cho tổng kích thước được tăng lên.
+	padding: 10px; là gồm 4 hướng:top bottom left right.
+CSS Border
+	- solid: nét viền liền.
+	- none: xóa không có border.
+	-  Kiểu solid #mamau.
+CSS Margin
+	-Tạo ra khoảng cách đẩy ra từ element.
+	-float: left; dần tất các khối thành hàng ngang.	
+CSS Box-sizing
+	- Box-sizing : border-box;  
+	- Tạo khoảng cách với phần viền.
+CSS Background- Clip
+	- Đổ màu nền cho các phần tử.
+CSS Background-Image
+	- Backgroud-image: url(link ảnh);
+	- Backgroud-size: 100%;
+	- Backgroud- repeat: no-repeat; Không lập lại;
+	- Linear-gradient(90deg, #333, #CCC) tạo ra dải màu chuyển.
+	- rgba(red,green,blue, độ trong suốt)
+CSS Background-size kywords
+	- Backgroud-size: Contain; lấy chiều dài bức ảnh.
+	- cover; lấy chiều dài hơn là kích thước 100%;
+CSS Background-origin
+	-Border- box đổ nền backgroud từ border vào.
+	-Content-box đổ vào từ giữa.
+CSS Backgroud-position
+	- Chọn 2 góc top left right bottom để background gắn về góc được chọn.
+	- 50px center.
+	- Top 20px right 20px; có thể thêm bằng thông số.
+	- có thể dùng giá trị tuyệt đối và tương đối.
+CSS Background Shorthand
+	- Background có thể viết chúng vào 1 thuộc tính. và cách nhau bằng dấu /.
+CSS Functions
+	- rgb(0,0,0);
+	-calc(120px +100px): nó có thể giúp chúng ta tính toán 
+	-attr a::after{
+			content:"("attr(href)")";
+		      }
+Pseudo Classes Lớp giả;
+	-:root tham chiếu phần tử gốc.
+	-:hover Định nghĩa vô số css, chỉ kích hoạt khi di chuyển chuột lên.
+	-:active Kích hoạt khi bấm vào nó;
+	-:first-child: Lấy ra đứa có đầu tiên để kích hoạt thuộc tính css.
+	-:last-child: Lấy ra đưa có cuối cùng để kích hoạt theo thuộc tính css.
+Pseudo Elements Phần tử giả.
+	-::before: content:""; không thể thiếu, 
+	-:: after: content:""; Không thể thiếu
+	-::first-letter: định nghĩa cho chữa cái đầu tiên.
+	-::first-line: định nghĩa cho dòng đầu tiên.
+	-::selection: sự lựa chọn, định nghĩa cho tất cả các vùng được chọn.
+CSS Position: Relative
+	- Relative: Vị trí tương đối.Không phụ thuộc vào vị trí nào, nó sẽ lấy 
+vị trí của chính nó làm mặc định.
+	- Absolute: Vị trí tuyệt đối.
+	- Fixed:Phụ thuộc và khu vực trình duyệt.
+	- Sticky:
+CSS Position: Absolute
+	- Bị phục thuộc vào một thể cha gần nhất có thuộc tính position để
+làm góc tọa độ.
+CSS Position: Fixed;
+	- Khi phụ thuộc vaaof của sổ chình duyệt thì sử dujgn Fixed.
+	- Top:0; để trên màn hình
+	- Đặt widht hoặc đặt left:0; right:0;
+CSS Position: Sticky
+	- Hạn chế sử dụng, phụ thược vào các hệ trình duyệt hỗ trợ.	
+Giới Thiệu Flexbox
+	-Có 2 thành phần chính.
+		1. Là flex-container
+		2. Là flex-item
+Các thuộc tính CSS trong Flexbox.
+	- Display: flex | inline-flex; Quyết định có sử dụng flex-box không.
+	- flex-direction:row | column; row là nằm ngang, column nằm dọc.
+	- flex-wrap: nowrap: không xuống dòng| wrap: Xuống dòng| wrap-reverse
+nhảy lên dòng trên.
+	-flex-basic: để xét kích thước của main-size.
+	-justify-content: flex-start; căn được phương hướng.
+	-justify-self:flex-star | flex - end | center. căn hướng cho main nhỏ.
+	-align- content tương tự với justify-content.
+	-align- self: Cũng tương tự với nó.
+	-flex-grow: Thay đổi kích thước lớn của main item.
+	-flex-shrink: Thay đổi kích thước nhỏ đi
+	-flex là cút phát viết ngắn.
+	-order để thây đổi thứ tự hiển thị.
+- CSS BEM 
+	-Viet ta cuar Block Element Modifier
+	- Block: Khoi
+	- Element: Thanh phan trong khoi
+	- Modifier: Bo sung y nghia cho  Block hoac Element
++Tai sao phai su dung BEM?
+	- moi nguoi dat mot kieu;
+	- members dat class trung nhau, CSS de len nhau.

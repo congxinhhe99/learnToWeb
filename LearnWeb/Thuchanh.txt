@@ -1,0 +1,5 @@
+Khi chúng ta sử đụng display:flex; thì mặc định flex-direction:row; thì chục main-axis nằm ngang.
+Trong layout flex có nhiều item mà chỉ có một ông flex từ 1 trở lên thì nó sẽ cố gắng chiếm hết phần
+chiều ngang.
+- Có thể sử dụng order để thay đổi việc chỉ của flex-item.
+- Backgroud: transparent; la trong suot/

@@ -1,0 +1,13 @@
+Tiêu Chuẩn BEM
+- Là tiêu chuẩn đạt tên class khi viết CSS
+! Ý nghĩa của BEM
+- Viết tắc của : Block Element Modifier
+- Block là  Khối.
+- Element: Thành phần trong khối
+- Modifier: Bổ sung ý nghĩa cho 'Block' hoặc 'Element'
+! Tại sao phải dùng BEM?
+- Giải quyết các vẫn đền nhầm lẫn khi làm việc teamwork or project.
+
+! Cú pháp.
+-.block
+-.block__element
